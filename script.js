@@ -31,18 +31,3 @@ function handleFormSubmit(event) {
     const kontakUser = document.getElementById('kontakUser').value;
     const jenisKebutuhan = document.getElementById('jenisKebutuhan').value;
     const pesan = document.getElementById('pesan').value;
-
-    // Masukkan ke kartu ringkasan
-    document.getElementById('sumNama').textContent = nama;
-    document.getElementById('sumKontak').textContent = kontakUser;
-    document.getElementById('sumLayanan').textContent = jenisKebutuhan;
-    document.getElementById('sumPesan').textContent = pesan;
-
-    // Tampilkan kartu ringkasan dengan animasi halus
-    const summaryCard = document.getElementById('summaryCard');
-    summaryCard.style.display = 'block';
-    summaryCard.scrollIntoView({ behavior: 'smooth' });
-
-    // Reset form
-    document.getElementById('consultForm').reset();
-}
